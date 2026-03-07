@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+        <!-- <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+        />
+        <meta
+            http-equiv="X-Content-Security-Policy"
+            content="default-src 'self'; script-src 'self'"
+        /> -->
+        <title>Hello from Electron renderer!</title>
+    </head>
+    <body>
+        <header>
+            <div class="carbon-intensity-container">
+                <div class="carbon-intensity-value">
+                    189
+                </div>
+                <div class="carbon-intensity-unit">
+                    gCO<sub>2</sub>/kWh
+                </div>
+            </div>
+        </header>
+        <script defer src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+* {
+    font-family: monospace;
+}
+body {
+    margin: 0;
+}
+.header {
+    height: 60px;
+    background-color: lightgray;
+}
+.carbon-intensity-container {
+    float: right;
+    margin: 15px;
+}
+.carbon-intensity-container .carbon-intensity-value {
+    color: #E67E22;
+    font-size: 30px;
+    text-align: center;
+}
+.carbon-intensity-container .carbon-intensity-unit {
+    color: gray;
+    font-size: 18px;
+}
+.carbon-intensity-container .carbon-intensity-unit sub {
+    bottom: -0.25em;
+}

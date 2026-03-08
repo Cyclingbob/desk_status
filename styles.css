@@ -3,24 +3,73 @@
 }
 body {
     margin: 0;
+    background-color: rgb(29, 29, 29);
 }
 .header {
     height: 60px;
     background-color: lightgray;
 }
 .carbon-intensity-container {
-    float: right;
-    margin: 15px;
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    border: 1px solid gray;
+    border-radius: 10px;
 }
 .carbon-intensity-container .carbon-intensity-value {
     color: #E67E22;
-    font-size: 30px;
+    font-size: 7rem;
     text-align: center;
 }
 .carbon-intensity-container .carbon-intensity-unit {
     color: gray;
-    font-size: 18px;
+    font-size: 2rem;
+    text-align: center;
 }
 .carbon-intensity-container .carbon-intensity-unit sub {
     bottom: -0.25em;
+}
+.weather-container {
+    margin: 5px;
+    padding: 10px;;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: fit-content;
+}
+.weather-container .weather-location {
+    margin: 5px;
+    font-size: 25px;
+    color: white;
+}
+.weather-container .weather-current {
+    display: flex;
+     align-items: center;
+}
+.weather-container .weather-current .icon-container {
+    
+}
+.weather-container .weather-current .icon-container img {
+    width: 80px;
+    height: 80px;
+}
+.weather-container .weather-current .temperature-container {
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.weather-container .weather-current .condition-container {
+    margin: 10px;
+}
+.weather-container .weather-current .condition-container ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.weather-container .weather-current .condition-container ul li {
+    color: #bdbdbd;
+    font-size: 18px;
+}
+.weather-container .weather-condition {
+    color: gray;
+    font-size: 30px;
 }

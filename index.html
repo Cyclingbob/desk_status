@@ -15,8 +15,7 @@
         <title>Hello from Electron renderer!</title>
     </head>
     <body>
-        <header>
-            <div class="carbon-intensity-container">
+        <div class="carbon-intensity-container">
                 <div class="carbon-intensity-value">
                     189
                 </div>
@@ -24,7 +23,30 @@
                     gCO<sub>2</sub>/kWh
                 </div>
             </div>
-        </header>
+        <div class="weather-container">
+            <div class="weather-location">
+                Wickford, Essex
+            </div>
+            <div class="weather-current">
+                <div class="icon-container">
+                    <img src="assets/cloudy_light.svg" alt="weather icon">
+                </div>
+                <div class="temperature-container">
+                    15°C
+                </div>
+                <div class="condition-container">
+                    <ul>
+                        <li>Precipitation: 10%</li>
+                        <li>Humidity: 10%</li>
+                        <li>Wind: 5 mph</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weather-condition">
+                Patchy rain nearby
+            </div>
+        </div>
+        <div style="background-color: red; width: 1280px; height: 50px; position: absolute; bottom: 5px"></div>
         <script defer src="script.js"></script>
     </body>
 </html>

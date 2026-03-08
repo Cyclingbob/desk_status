@@ -1,5 +1,9 @@
 const { app, BrowserWindow } = require('electron')
 
+app.disableHardwareAcceleration();
+app.commandLine.appendSwitch('disable-gpu');
+app.commandLine.appendSwitch('disable-software-rasterizer');
+
 const createWindow = () => {
     const win = new BrowserWindow({
         width: 1280,

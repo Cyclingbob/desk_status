@@ -1,5 +1,7 @@
 {
     "fullscreen": true,
     "frame": false,
-    "open_dev_tools": false
+    "open_dev_tools": true,
+    "weather_api_key": "f94b3d3a2560409cbb7192215213007",
+    "weather_api_location": "Wickford"
 }

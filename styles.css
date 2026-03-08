@@ -31,30 +31,30 @@ body {
 }
 .weather-container {
     margin: 5px;
-    padding: 10px;;
+    padding: 10px;
     border: 1px solid gray;
     border-radius: 10px;
     width: fit-content;
 }
 .weather-container .weather-location {
     margin: 5px;
-    font-size: 25px;
+    font-size: 3rem;
     color: white;
+    text-align: center;
 }
 .weather-container .weather-current {
     display: flex;
-     align-items: center;
+    align-items: center;
 }
 .weather-container .weather-current .icon-container {
     
 }
 .weather-container .weather-current .icon-container img {
-    width: 80px;
-    height: 80px;
+    height: 10rem;
 }
 .weather-container .weather-current .temperature-container {
     color: white;
-    font-size: 30px;
+    font-size: 4rem;
     margin: 10px;
 }
 .weather-container .weather-current .condition-container {
@@ -67,9 +67,28 @@ body {
 }
 .weather-container .weather-current .condition-container ul li {
     color: #bdbdbd;
-    font-size: 18px;
+    font-size: 3rem;
 }
 .weather-container .weather-condition {
     color: gray;
-    font-size: 30px;
+    font-size: 4em;
+    text-align: center;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: darkgray;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+footer button {
+    background-color: transparent;
+    border: 1px solid gray;
+    color: white;
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
 }

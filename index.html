@@ -36,9 +36,9 @@
                 </div>
                 <div class="condition-container">
                     <ul>
-                        <li>Precipitation: 10%</li>
-                        <li>Humidity: 10%</li>
-                        <li>Wind: 5 mph</li>
+                        <li id="wind-condition">Wind: 5mph</li>
+                        <li id="humidity-condition">Humidity: 10%</li>
+                        <li id="cloud-condition">Cloud: 50%</li>
                     </ul>
                 </div>
             </div>
@@ -46,7 +46,11 @@
                 Patchy rain nearby
             </div>
         </div>
-        <div style="background-color: red; width: 1280px; height: 50px; position: absolute; bottom: 5px"></div>
-        <script defer src="script.js"></script>
+        <footer>
+            <button id="open-dev-tools">Open Dev Tools</button>
+            <button id="fullscreen">Fullscreen</button>
+            <button id="quit-app">Quit</button>
+        </footer>
+        <script defer src="renderer.js"></script>
     </body>
 </html>

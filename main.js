@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron')
+const config = require("./config.json")
 
 app.disableHardwareAcceleration();
 app.commandLine.appendSwitch('disable-gpu');
@@ -11,12 +12,13 @@ const createWindow = () => {
         // titleBarStyle: 'hidden',
         autoHideMenuBar: true,
         // transparent: true,
-        // frame: false,
+        frame: config.frame,
+        fullscreen: config.fullscreen
     })
 
     win.loadFile('index.html')
     // win.setMenuBarVisibility(false)
-    win.webContents.openDevTools()
+    if(config.open_dev_tools) win.webContents.openDevTools()
 }
 
 app.whenReady().then(() => {
